@@ -1,4 +1,4 @@
-import bgVanillaLogo from '@/images/logo.png'
+import bgVanillaLogo from '@/images/logo.png';
 
 export function getSubdomain(host: string): string | null {
   const parts = host.split('.');
