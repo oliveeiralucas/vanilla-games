@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import 'tailwindcss';
+@import './base.css';
+
+@theme {
+  --color-dark-blue: #1a1a40;
+  --color-medium-blue: #3c4ba3;
+  --color-light-blue: #7fcaff;
+  --color-gold: #ffcc66;
+  --color-cyan: #00bfff;
+  --color-fantasy-purple: #8a2be2;
+
+  --font-sans:
+    Alkhemikal, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+  --font-display:
+    Poppins, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}

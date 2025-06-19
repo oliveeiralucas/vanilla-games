@@ -1,3 +1,11 @@
+import AboutSection from '@/components/sections/@about/aboutSection';
+import HeroSection from '@/components/sections/@hero/heroSection';
+
 export default function Home() {
-  return <p>teste</p>;
+  return (
+    <div>
+      <HeroSection />
+      <AboutSection />
+    </div>
+  );
 }
