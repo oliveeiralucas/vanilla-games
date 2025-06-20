@@ -60,6 +60,7 @@ export default function StreamersSection() {
     <section
       className='relative py-20 px-6 bg-dark-blue text-white'
       style={{ backgroundImage: "url('/images/streamers-bg.jpg')" }}
+      id='streamers'
     >
       <h2 className='text-center text-3xl md:text-4xl font-sans text-[var(--color-gold)] uppercase tracking-wider mb-12'>
         Streamers da Comunidade

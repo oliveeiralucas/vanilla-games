@@ -32,7 +32,7 @@ const features = [
 
 export default function ServerFeaturesSection() {
   return (
-    <section className='bg-[var(--color-dark-blue)] py-24 sm:py-32 px-6 lg:px-8 text-white'>
+    <section className='bg-[var(--color-dark-blue)] py-24 sm:py-32 px-6 lg:px-8 text-white' id='servidor'>
       <div className='mx-auto max-w-7xl'>
         <div className='mx-auto max-w-2xl text-center'>
           <h2 className='text-base font-semibold text-[var(--color-light-blue)] tracking-wide uppercase'>

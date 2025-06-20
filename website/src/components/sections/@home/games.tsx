@@ -53,6 +53,7 @@ export default function GamesSection() {
     <section
       className='relative py-24 px-6 bg-no-repeat bg-cover bg-center bg-dark-blue'
       style={{ backgroundImage: "url('/images/games-bg.jpg')" }}
+      id='jogos'
     >
       <div className='max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8'>
         {games.map((game) => (

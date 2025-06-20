@@ -77,8 +77,8 @@ export default function Navbar() {
   const menuItems: MenuItem[] = getMenuBySubdomain(subdomain);
 
   return (
-    <header
-      className='z-50 w-full py-1'
+    <header 
+      className='z-50 w-full'
       style={{
         backgroundImage: `url(${bgImage.src})`,
         backgroundSize: 'cover',
@@ -86,7 +86,7 @@ export default function Navbar() {
         zIndex: -1,
       }}
     >
-      <div className='max-w-7xl mx-auto px-6 h-16 flex items-center justify-between'>
+      <div className='max-w-7xl mx-auto px-6 h-16 flex items-center justify-between py-2'>
         <Logo src={logoSrc} />
 
         <div className='flex items-center space-x-4'>

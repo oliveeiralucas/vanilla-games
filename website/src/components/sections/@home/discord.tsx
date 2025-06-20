@@ -6,7 +6,7 @@ import DiscordImage from '@/images/discord.jpg';
 
 export default function DiscordSection() {
   return (
-    <section className='bg-[var(--color-dark-blue)] relative isolate overflow-hidden'>
+    <section className='bg-[var(--color-dark-blue)] relative isolate overflow-hidden' id='discord'>
       <div
         aria-hidden='true'
         className='absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80'

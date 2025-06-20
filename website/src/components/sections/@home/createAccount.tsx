@@ -53,7 +53,7 @@ function CTAButton() {
 
 export default function CreateAccountSection() {
   return (
-    <section className='relative bg-[var(--color-dark-blue)] px-6 py-20 text-white text-center overflow-hidden'>
+    <section className='relative bg-[var(--color-dark-blue)] px-6 py-20 text-white text-center overflow-hidden' id='criarconta'>
       <DecorativeBanner />
       <div className='relative z-10'>
         <CreateTitle />

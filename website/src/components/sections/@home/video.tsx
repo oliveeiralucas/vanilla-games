@@ -4,7 +4,7 @@ export default function VideoBox() {
       <div className='bg-[var(--color-gold)] text-darkBlue font-bold px-3 py-1 text-md rounded-t-md text-center font-display'>
         Explore o Universo
       </div>
-      <div className='bg-black overflow-hidden rounded-b-md shadow-lg flex justify-center items-center'>
+      <div className='bg-black overflow-hidden rounded-b-md shadow-lg flex justify-center items-center py-12'>
         <video
           src='/videos/intro-vanilla.mp4'
           className='max-w-[800px] w-full object-cover'

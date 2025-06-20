@@ -78,7 +78,7 @@ function ActionButtons() {
 
 export default function AboutSection() {
   return (
-    <section className='relative py-24 px-6 md:py-32 text-white overflow-hidden bg-dark-blue'>
+    <section className='relative py-24 px-6 md:py-32 text-white overflow-hidden bg-dark-blue' id='servidor'>
       <BackgroundImage />
       <div className='relative z-10 max-w-5xl mx-auto text-center'>
         <ServerLogo />

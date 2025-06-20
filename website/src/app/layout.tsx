@@ -17,8 +17,10 @@ export default function RootLayout({
   return (
     <html lang='pt-BR'>
       <body className='bg-white text-gray-900 antialiased'>
-        <CountdownTimer />
-        <Navbar />
+        <div className='sticky top-0 z-50 shadow-md'>
+          <CountdownTimer />
+          <Navbar />
+        </div>
         <main className='min-h-screen'>{children}</main>
         <Footer />
       </body>
