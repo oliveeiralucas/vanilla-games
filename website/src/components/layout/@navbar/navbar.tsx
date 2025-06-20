@@ -77,7 +77,7 @@ export default function Navbar() {
   const menuItems: MenuItem[] = getMenuBySubdomain(subdomain);
 
   return (
-    <header 
+    <header
       className='z-50 w-full'
       style={{
         backgroundImage: `url(${bgImage.src})`,

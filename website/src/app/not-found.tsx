@@ -5,6 +5,7 @@ import NotFound4 from '@/images/4044.jpg';
 import NotFound5 from '@/images/4045.jpg';
 
 import Image from 'next/image';
+import Link from 'next/link';
 
 const notFoundImages = [NotFound, NotFound2, NotFound3, NotFound4, NotFound5];
 
@@ -30,9 +31,9 @@ export default function Example() {
               O hamster que roda nosso servidor tirou férias.
             </p>
             <div className='mt-10 flex justify-center'>
-              <a href='/' className='text-sm/7 font-semibold text-white'>
+              <Link href='/' className='text-sm/7 font-semibold text-white'>
                 <span aria-hidden='true'>&larr;</span> Voltar pro início
-              </a>
+              </Link>
             </div>
           </div>
         </main>
