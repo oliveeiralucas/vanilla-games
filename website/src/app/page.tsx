@@ -5,11 +5,13 @@ import GamesSection from '@/components/sections/@home/games';
 import HeroSection from '@/components/sections/@home/hero';
 import ServerFeaturesSection from '@/components/sections/@home/Server';
 import StreamersSection from '@/components/sections/@home/Streamers';
+import VideoBox from '@/components/sections/@home/video';
 
 export default function Home() {
   return (
     <div>
       <HeroSection />
+      <VideoBox />
       <AboutSection />
       <GamesSection />
       <CreateAccountSection />

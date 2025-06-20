@@ -4,7 +4,7 @@ export function getSubdomain(host: string): string | null {
   // Lista de domínios principais sem subdomínio
   const baseDomains = ['localhost', 'vanilla-games-two.vercel.app'];
 
-  if (baseDomains.some(domain => host === domain || host.endsWith(`.${domain}`))) {
+  if (baseDomains.some((domain) => host === domain || host.endsWith(`.${domain}`))) {
     return null;
   }
 
