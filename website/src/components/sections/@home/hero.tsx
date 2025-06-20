@@ -47,7 +47,7 @@ function HeroTitle() {
 // Vídeo
 function FloatingVideoBox() {
   return (
-    <div className='absolute top-8 right-6 md:top-16 md:right-12 w-120 z-30'>
+    <div className='relative md:absolute md:top-16 md:right-12 md:w-120 w-72 z-30 md:px-0'>
       <div className='bg-[var(--color-gold)] text-darkBlue font-bold px-3 py-1 text-md rounded-t-md text-center font-display'>
         Explore o Universo
       </div>
@@ -68,7 +68,7 @@ function FloatingVideoBox() {
 export default function HeroSection() {
   return (
     <section
-      className='relative bg-cover bg-center bg-no-repeat min-h-[80vh] flex justify-center md:justify-start items-center text-center md:text-left px-6 text-white'
+      className='relative bg-cover bg-center bg-no-repeat min-h-[80vh] flex justify-center md:justify-start items-center text-center md:text-left px-6 text-white flex-col md:flex-row gap-y-8 md:gap-y-0'
       style={{
         backgroundImage: `url(${heroBackground.src})`,
       }}

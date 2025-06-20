@@ -1,8 +1,10 @@
-import AboutSection from '@/components/sections/@about/aboutSection';
-import CreateAccountSection from '@/components/sections/@cta/createAccount';
-import GamesSection from '@/components/sections/@games/gamesSection';
-import HeroSection from '@/components/sections/@hero/heroSection';
-import StreamersSection from '@/components/sections/@streamers/Streamers';
+import AboutSection from '@/components/sections/@home/about';
+import CreateAccountSection from '@/components/sections/@home/createAccount';
+import DiscordSection from '@/components/sections/@home/discord';
+import GamesSection from '@/components/sections/@home/games';
+import HeroSection from '@/components/sections/@home/hero';
+import ServerFeaturesSection from '@/components/sections/@home/Server';
+import StreamersSection from '@/components/sections/@home/Streamers';
 
 export default function Home() {
   return (
@@ -12,6 +14,8 @@ export default function Home() {
       <GamesSection />
       <CreateAccountSection />
       <StreamersSection />
+      <ServerFeaturesSection />
+      <DiscordSection />
     </div>
   );
 }

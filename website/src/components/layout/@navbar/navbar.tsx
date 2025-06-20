@@ -98,7 +98,7 @@ export default function Navbar() {
             className='md:hidden inline-flex items-center text-lightBlue'
             onClick={() => setMobileOpen(!mobileOpen)}
           >
-            {mobileOpen ? <XMarkIcon className='w-6 h-6' /> : <Bars3Icon className='w-6 h-6' />}
+            {mobileOpen ? <XMarkIcon className='w-6 h-6' /> : <Bars3Icon className='w-6 h-6 text-white' />}
           </button>
         </div>
         <Link

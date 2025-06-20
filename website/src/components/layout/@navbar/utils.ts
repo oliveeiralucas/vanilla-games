@@ -1,8 +1,18 @@
 import bgVanillaLogo from '@/images/logo.png';
 
 export function getSubdomain(host: string): string | null {
+  // Lista de domínios principais sem subdomínio
+  const baseDomains = ['localhost', 'vanilla-games-two.vercel.app'];
+
+  if (baseDomains.some(domain => host === domain || host.endsWith(`.${domain}`))) {
+    return null;
+  }
+
   const parts = host.split('.');
-  if (parts.length > 2) return parts[0];
+  if (parts.length > 2) {
+    return parts[0];
+  }
+
   return null;
 }
 
@@ -13,6 +23,8 @@ export function getMenuBySubdomain(subdomain: string | null) {
       { label: 'Streamers', href: '/streamers' },
       { label: 'Criar Conta', href: '/criar-conta' },
       { label: 'Lista de Jogos', href: '/jogos' },
+      { label: 'Nosso Servidor', href: '#servidor' },
+      { label: 'Comunidade', href: '#discord' },
     ];
   }
 
