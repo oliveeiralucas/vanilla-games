@@ -21,7 +21,7 @@ function DecorativeBanner() {
 // 🔹 Título épico
 function CreateTitle() {
   return (
-    <h2 className='text-center text-3xl md:text-4xl font-display text-[var(--color-gold)] mt-6 uppercase tracking-wider drop-shadow'>
+    <h2 className='text-center text-3xl md:text-4xl font-sans text-[var(--color-gold)] mt-6 uppercase tracking-wider drop-shadow'>
       Crie sua Conta e Inicie sua Jornada
     </h2>
   );
@@ -30,7 +30,7 @@ function CreateTitle() {
 // 🔹 Texto secundário
 function CreateDescription() {
   return (
-    <p className='text-center max-w-2xl mx-auto mt-4 text-white/90 text-base md:text-lg font-light'>
+    <p className='text-center max-w-2xl mx-auto mt-4 text-white/90 text-base md:text-lg font-light font-display'>
       Explore mundos mágicos, evolua seu personagem, participe de batalhas épicas e conquiste seu lugar entre os
       melhores. Registre-se agora e faça parte da lenda Vanilla.
     </p>

@@ -38,10 +38,10 @@ export default function ServerFeaturesSection() {
           <h2 className='text-base font-semibold text-[var(--color-light-blue)] tracking-wide uppercase'>
             Nosso Servidor
           </h2>
-          <p className='mt-2 text-4xl font-display tracking-tight text-[var(--color-gold)] sm:text-5xl'>
+          <p className='mt-2 text-4xl font-sans tracking-tight text-[var(--color-gold)] sm:text-5xl'>
             Uma Experiência Completa, Justa e Divertida
           </p>
-          <p className='mt-6 text-lg text-gray-300'>
+          <p className='mt-6 text-lg text-gray-300 font-display'>
             O Vanilla oferece servidores estáveis, balanceados e com uma comunidade incrível. Conheça alguns dos nossos
             diferenciais abaixo:
           </p>
@@ -56,12 +56,12 @@ export default function ServerFeaturesSection() {
                   {feature.name}
                 </dt>
                 <dd className='mt-4 flex flex-col text-base text-gray-300'>
-                  <p className='flex-1'>{feature.description}</p>
+                  <p className='flex-1 font-display'>{feature.description}</p>
                   {feature.href && (
                     <p className='mt-4'>
                       <a
                         href={feature.href}
-                        className='text-sm font-semibold text-[var(--color-light-blue)] hover:text-white transition'
+                        className='text-sm font-semibold text-[var(--color-light-blue)] hover:text-white transition font-display'
                       >
                         Saiba mais <span aria-hidden='true'>→</span>
                       </a>

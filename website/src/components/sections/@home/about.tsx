@@ -39,7 +39,7 @@ function PlayLabel() {
 // 🔹 Título principal
 function SectionTitle() {
   return (
-    <h2 className='relative z-10 text-4xl md:text-5xl text-white font-display text-center mt-4 drop-shadow-md'>
+    <h2 className='relative z-10 text-4xl md:text-5xl text-white font-sans text-center mt-4 drop-shadow-md'>
       Um Mundo de Fantasia Espera por Você
     </h2>
   );
@@ -48,7 +48,7 @@ function SectionTitle() {
 // 🔹 Legenda explicativa
 function SectionDescription() {
   return (
-    <p className='relative z-10 mt-4 max-w-2xl mx-auto text-center text-base md:text-lg text-white/80 font-light'>
+    <p className='relative z-10 mt-4 max-w-2xl mx-auto text-center text-base md:text-lg text-white/80 font-light font-display'>
       Vanilla Games nasceu da paixão por mundos fantásticos e do desejo de oferecer uma experiência única e acessível.
       Aqui, você encontra servidores como Perfect World e Ragnarok com ajustes modernos, equilíbrio, fidelidade e muita
       magia no ar.

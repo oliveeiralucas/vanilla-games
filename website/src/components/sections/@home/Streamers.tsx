@@ -40,13 +40,13 @@ function StreamerCard({ name, image, description, link }: StreamerCardProps) {
 
       <Image src={image} alt={name} width={320} height={180} className='w-full h-44 object-cover' />
       <div className='p-4'>
-        <h3 className='text-lg text-[var(--color-gold)] font-display'>{name}</h3>
-        <p className='text-sm text-white/80 mt-1'>{description}</p>
+        <h3 className='text-lg text-[var(--color-gold)] font-sans'>{name}</h3>
+        <p className='text-sm text-white/80 mt-1 font-display'>{description}</p>
         <Link
           href={link}
           target='_blank'
           rel='noopener noreferrer'
-          className='inline-block mt-3 text-sm text-[var(--color-light-blue)] underline hover:text-white transition'
+          className='inline-block mt-3 text-sm text-[var(--color-light-blue)] underline hover:text-white transition font-display'
         >
           Assistir
         </Link>
@@ -61,7 +61,7 @@ export default function StreamersSection() {
       className='relative py-20 px-6 bg-dark-blue text-white'
       style={{ backgroundImage: "url('/images/streamers-bg.jpg')" }}
     >
-      <h2 className='text-center text-3xl md:text-4xl font-display text-[var(--color-gold)] uppercase tracking-wider mb-12'>
+      <h2 className='text-center text-3xl md:text-4xl font-sans text-[var(--color-gold)] uppercase tracking-wider mb-12'>
         Streamers da Comunidade
       </h2>
 
