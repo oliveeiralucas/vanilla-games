@@ -35,7 +35,7 @@ export default function DiscordSection() {
                 href='https://discord.gg/seu-servidor'
                 target='_blank'
                 rel='noopener noreferrer'
-                className='rounded-md bg-gold px-5 py-2.5 text-sm font-semibold text-dark-blue shadow-md hover:brightness-110 transition'
+                className='rounded-md bg-gold px-5 py-2.5 text-xl font-semibold text-dark-blue shadow-md hover:brightness-110 transition'
               >
                 Entrar no Discord
               </Link>

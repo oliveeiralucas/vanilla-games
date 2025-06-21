@@ -2,8 +2,9 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import Background from '@/images/streamers-background.png';
 
-import teste from '@/images/teste.png'
+import teste from '@/images/games.png';
 
 // 🔹 Imagem de fundo curvada ou decorativa
 function DecorativeBanner() {
@@ -12,7 +13,7 @@ function DecorativeBanner() {
       <Image
         src={teste.src}
         alt='Banner de personagens'
-        width={1200}
+        width={1000}
         height={400}
         className='w-full h-auto object-cover'
       />
@@ -45,7 +46,7 @@ function CTAButton() {
     <div className='mt-6 flex justify-center'>
       <Link
         href='/criar-conta'
-        className='bg-[var(--color-gold)] text-[var(--color-dark-blue)] font-bold px-6 py-3 rounded shadow-md hover:brightness-110 uppercase tracking-wide text-sm transition'
+        className='bg-[var(--color-gold)] text-[var(--color-dark-blue)] font-bold px-6 py-3 rounded shadow-md hover:brightness-110 uppercase tracking-wide text-xl transition'
       >
         Criar Conta Agora
       </Link>
@@ -58,6 +59,12 @@ export default function CreateAccountSection() {
     <section
       className='relative bg-[var(--color-dark-blue)] px-6 py-20 text-white text-center overflow-hidden'
       id='criarconta'
+      style={{
+        backgroundImage: `url(${Background.src})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'top',
+        backgroundSize: 'cover',
+      }}
     >
       <DecorativeBanner />
       <div className='relative z-10'>

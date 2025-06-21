@@ -81,8 +81,7 @@ function GameCard({ title, slug, image, tags }: Game) {
 export default function GamesSection() {
   return (
     <section
-      className='relative py-24 px-6 bg-no-repeat bg-cover bg-center bg-dark-blue'
-      style={{ backgroundImage: "url('/images/games-bg.jpg')" }}
+      className='relative py-24 px-6 bg-no-repeat bg-cover bg-center bg-gradient-to-br from-dark-blue via-fantasy-purple to-gold'
       id='jogos'
     >
       <div className='relative z-10 max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8'>

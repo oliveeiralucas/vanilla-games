@@ -1,10 +1,40 @@
 'use client';
 
 import Image from 'next/image';
-import Link from 'next/link';
 
 import logo from '@/images/logo.png';
 import Background from '@/images/about-background.png';
+import { UserGroupIcon, ShieldCheckIcon, BoltIcon, BookOpenIcon } from '@heroicons/react/24/outline';
+
+const features = [
+  {
+    name: 'Regras do Servidor',
+    description: 'Conheça as regras de conduta e convívio no Vanilla. Jogar limpo é essencial para manter a magia.',
+    href: '/regras',
+    icon: BookOpenIcon,
+  },
+  {
+    name: 'Comunidade Ativa',
+    description:
+      'Jogadores engajados, eventos regulares e suporte direto via Discord. Uma comunidade acolhedora e vibrante.',
+    href: '',
+    icon: UserGroupIcon,
+  },
+  {
+    name: 'Equilíbrio e Qualidade',
+    description:
+      'Balanceamento contínuo entre as classes, progressão justa e sem Pay-to-Win. Nosso foco é diversão duradoura.',
+    href: '',
+    icon: ShieldCheckIcon,
+  },
+  {
+    name: 'Experiência Rápida e Estável',
+    description:
+      'Servidores otimizados com baixa latência, atualizações frequentes e desempenho confiável para sua aventura.',
+    href: '',
+    icon: BoltIcon,
+  },
+];
 
 // Logo do servidor
 function ServerLogo() {
@@ -18,7 +48,7 @@ function ServerLogo() {
 // Label “Jogue agora”
 function PlayLabel() {
   return (
-    <div className='relative z-10 inline-block bg-[var(--color-gold)] text-[var(--color-dark-blue)] px-4 py-1 text-xs font-bold rounded uppercase tracking-wider shadow-md'>
+    <div className='relative mx-auto w-fit flex z-10 bg-[var(--color-gold)] text-[var(--color-dark-blue)] px-4 py-1 text-xs font-bold rounded uppercase tracking-wider shadow-md'>
       Jogue Agora
     </div>
   );
@@ -44,17 +74,32 @@ function SectionDescription() {
   );
 }
 
-// 🔹 Conjunto de botões
-function ActionButtons() {
+function FeatureSection() {
   return (
-    <div className='relative z-10 mt-6 flex justify-center gap-4 flex-wrap'>
-      <Link
-        href='/download'
-        className='bg-[var(--color-light-blue)] hover:bg-[var(--color-cyan)] text-[var(--color-dark-blue)] font-bold px-6 py-2 rounded shadow-md transition'
-      >
-        Download
-      </Link>
-     
+    <div className='mx-auto mt-20 max-w-2xl lg:max-w-none lg:mt-24 text-center md:text-left'>
+      <dl className='grid grid-cols-1 gap-y-16 gap-x-12 sm:grid-cols-2 lg:grid-cols-4'>
+        {features.map((feature) => (
+          <div key={feature.name} className='flex flex-col'>
+            <dt className='flex items-center gap-x-3 text-lg font-semibold text-white justify-center md:justify-start'>
+              <feature.icon className='w-6 h-6 text-[var(--color-cyan)]' />
+              {feature.name}
+            </dt>
+            <dd className='mt-4 flex flex-col text-base text-gray-300'>
+              <p className='flex-1 font-display'>{feature.description}</p>
+              {feature.href && (
+                <p className='mt-4'>
+                  <a
+                    href={feature.href}
+                    className='text-sm font-semibold text-[var(--color-light-blue)] hover:text-white transition font-display'
+                  >
+                    Saiba mais <span aria-hidden='true'>→</span>
+                  </a>
+                </p>
+              )}
+            </dd>
+          </div>
+        ))}
+      </dl>
     </div>
   );
 }
@@ -68,12 +113,12 @@ export default function AboutSection() {
         backgroundImage: `url(${Background.src})`,
       }}
     >
-      <div className='relative z-10 max-w-5xl mx-auto text-center'>
+      <div className='relative z-10 max-w-7xl mx-auto'>
         <ServerLogo />
         <PlayLabel />
         <SectionTitle />
         <SectionDescription />
-        <ActionButtons />
+        <FeatureSection />
       </div>
 
       {/* Overlay escuro para legibilidade */}
