@@ -3,12 +3,14 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import teste from '@/images/teste.png'
+
 // 🔹 Imagem de fundo curvada ou decorativa
 function DecorativeBanner() {
   return (
     <div className='relative z-0 w-full max-w-5xl mx-auto overflow-hidden rounded-t-full border-y-4 border-[var(--color-gold)]'>
       <Image
-        src='/images/create-banner.png'
+        src={teste.src}
         alt='Banner de personagens'
         width={1200}
         height={400}

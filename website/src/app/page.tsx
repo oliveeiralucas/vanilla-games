@@ -15,9 +15,9 @@ export default function Home() {
       <AboutSection />
       <GamesSection />
       <CreateAccountSection />
-      <StreamersSection />
-      <ServerFeaturesSection />
       <DiscordSection />
+      <ServerFeaturesSection />
+      <StreamersSection />
     </div>
   );
 }

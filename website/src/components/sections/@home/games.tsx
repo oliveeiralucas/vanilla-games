@@ -1,50 +1,80 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 
-interface GameCardProps {
+// Imagens dos jogos
+import PWImage from '@/images/games/pw.webp';
+import RagnarokImage from '@/images/games/ragnarok.webp';
+import MuImage from '@/images/games/mu.webp';
+import GTAImage from '@/images/games/gta-rp.webp';
+
+interface Game {
   title: string;
   slug: string;
-  image: string;
+  image: StaticImageData;
+  tags: string[];
 }
 
-const games = [
+const games: Game[] = [
   {
     title: 'Perfect World',
     slug: 'pw',
-    image: '/games/pw.jpg',
+    image: PWImage,
+    tags: ['2 Years', 'PvP'],
   },
   {
     title: 'Ragnarok',
     slug: 'ragnarok',
-    image: '/games/ragnarok.jpg',
+    image: RagnarokImage,
+    tags: ['New Server', 'Classic'],
   },
   {
     title: 'Mu Online',
     slug: 'mu',
-    image: '/games/mu.jpg',
+    image: MuImage,
+    tags: ['4 Years', 'Season 6'],
   },
   {
     title: 'GTA RP',
     slug: 'gta',
-    image: '/games/gta.jpg',
+    image: GTAImage,
+    tags: ['Roleplay', '1 Year'],
   },
 ];
 
-function GameCard({ title, slug, image }: GameCardProps) {
+function GameCard({ title, slug, image, tags }: Game) {
   return (
-    <Link
-      href={`/jogos/${slug}`}
-      className='group bg-gradient-to-b from-[#0c0c1c] to-[#1a1a40] border border-gray-600 rounded-md overflow-hidden shadow-xl hover:scale-105 transition duration-300'
-    >
-      <div className='relative w-full h-72'>
-        <Image src={image} alt={title} fill className='object-cover' />
+    <div className='relative group bg-gradient-to-b from-[#0c0c1c] to-[#1a1a40] border border-gray-600 rounded-md overflow-hidden shadow-xl hover:scale-105 transition duration-300'>
+      {/* Tags */}
+      <div className='absolute top-2 left-2 flex flex-wrap gap-1 z-10'>
+        {tags.map((tag) => (
+          <span key={tag} className='bg-[var(--color-gold)] text-darkBlue text-xs font-bold px-2 py-0.5 rounded'>
+            {tag}
+          </span>
+        ))}
       </div>
-      <div className='p-3 bg-black/40 text-center text-[var(--color-gold)] font-display text-lg tracking-wide uppercase border-t border-gray-700'>
+
+      {/* Imagem do jogo */}
+      <Link href={`/jogos/${slug}`}>
+        <div className='relative w-full h-72'>
+          <Image src={image} alt={title} fill className='object-cover' quality={100} />
+        </div>
+      </Link>
+
+      {/* Título e botão */}
+      <div className='p-3 bg-black/40 text-center text-[var(--color-gold)] font-sans text-lg tracking-wide uppercase border-t border-gray-700'>
         {title}
+        <div className='mt-3'>
+          <Link
+            href={`/jogos/${slug}`}
+            className='inline-block text-sm text-[var(--color-light-blue)] underline hover:text-white transition font-display'
+          >
+            Conhecer jogo
+          </Link>
+        </div>
       </div>
-    </Link>
+    </div>
   );
 }
 
@@ -55,13 +85,11 @@ export default function GamesSection() {
       style={{ backgroundImage: "url('/images/games-bg.jpg')" }}
       id='jogos'
     >
-      <div className='max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8'>
+      <div className='relative z-10 max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8'>
         {games.map((game) => (
           <GameCard key={game.slug} {...game} />
         ))}
       </div>
-
-      {/* overlay para legibilidade, se necessário */}
       <div className='absolute inset-0 bg-black/50 pointer-events-none' />
     </section>
   );

@@ -30,7 +30,7 @@ export default function DiscordSection() {
               Participe da nossa comunidade, receba suporte, acompanhe atualizações e participe de eventos exclusivos
               direto do nosso servidor no Discord.
             </p>
-            <div className='mt-10 flex items-center justify-center gap-x-6'>
+            <div className='mt-8 flex items-center justify-center gap-x-6'>
               <Link
                 href='https://discord.gg/seu-servidor'
                 target='_blank'
@@ -42,7 +42,7 @@ export default function DiscordSection() {
             </div>
           </div>
 
-          <div className='mt-16 sm:mt-24'>
+          <div className='mt-12'>
             <Image
               src={DiscordImage.src}
               alt='Banner do Discord'

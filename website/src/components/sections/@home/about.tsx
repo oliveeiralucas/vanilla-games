@@ -4,21 +4,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import logo from '@/images/logo.png';
+import Background from '@/images/about-background.png';
 
-// 🔹 Fundo com imagem
-function BackgroundImage() {
-  return (
-    <div
-      className='absolute inset-0 z-0 bg-cover bg-center bg-no-repeat'
-      style={{
-        backgroundImage: "url('/images/about-bg.jpg')",
-      }}
-      aria-hidden='true'
-    />
-  );
-}
-
-// 🔹 Logo do servidor
+// Logo do servidor
 function ServerLogo() {
   return (
     <div className='relative z-10 mx-auto w-48 md:w-60'>
@@ -27,7 +15,7 @@ function ServerLogo() {
   );
 }
 
-// 🔹 Label “Jogue agora”
+// Label “Jogue agora”
 function PlayLabel() {
   return (
     <div className='relative z-10 inline-block bg-[var(--color-gold)] text-[var(--color-dark-blue)] px-4 py-1 text-xs font-bold rounded uppercase tracking-wider shadow-md'>
@@ -66,20 +54,20 @@ function ActionButtons() {
       >
         Download
       </Link>
-      <Link
-        href='/sobre'
-        className='bg-transparent border border-[var(--color-gold)] text-[var(--color-gold)] font-bold px-6 py-2 rounded shadow-md hover:bg-[var(--color-gold)] hover:text-[var(--color-dark-blue)] transition'
-      >
-        Saiba Mais
-      </Link>
+     
     </div>
   );
 }
 
 export default function AboutSection() {
   return (
-    <section className='relative py-24 px-6 md:py-32 text-white overflow-hidden bg-dark-blue' id='servidor'>
-      <BackgroundImage />
+    <section
+      className='relative py-24 px-6 md:py-32 text-white overflow-hidden bg-dark-blue'
+      id='servidor'
+      style={{
+        backgroundImage: `url(${Background.src})`,
+      }}
+    >
       <div className='relative z-10 max-w-5xl mx-auto text-center'>
         <ServerLogo />
         <PlayLabel />

@@ -2,6 +2,12 @@ import { UserGroupIcon, ShieldCheckIcon, BoltIcon, BookOpenIcon } from '@heroico
 
 const features = [
   {
+    name: 'Regras do Servidor',
+    description: 'Conheça as regras de conduta e convívio no Vanilla. Jogar limpo é essencial para manter a magia.',
+    href: '/regras',
+    icon: BookOpenIcon,
+  },
+  {
     name: 'Comunidade Ativa',
     description:
       'Jogadores engajados, eventos regulares e suporte direto via Discord. Uma comunidade acolhedora e vibrante.',
@@ -12,21 +18,15 @@ const features = [
     name: 'Equilíbrio e Qualidade',
     description:
       'Balanceamento contínuo entre as classes, progressão justa e sem Pay-to-Win. Nosso foco é diversão duradoura.',
-    href: '/sobre',
+    href: '',
     icon: ShieldCheckIcon,
   },
   {
     name: 'Experiência Rápida e Estável',
     description:
       'Servidores otimizados com baixa latência, atualizações frequentes e desempenho confiável para sua aventura.',
-    href: '/download',
+    href: '',
     icon: BoltIcon,
-  },
-  {
-    name: 'Regras do Servidor',
-    description: 'Conheça as regras de conduta e convívio no Vanilla. Jogar limpo é essencial para manter a magia.',
-    href: '/regras',
-    icon: BookOpenIcon,
   },
 ];
 
