@@ -25,13 +25,13 @@ function DiscordButton() {
 function CTAButtons() {
   return (
     <div className='mt-8 flex flex-wrap justify-center items-center gap-4 font-display'>
-      <DiscordButton />
       <Link
-        href='/download'
+        href='#criarconta'
         className='bg-[var(--color-fantasy-purple)] text-darkBlue font-bold px-6 py-3 rounded shadow hover:brightness-110 transition'
       >
-        Baixar Jogo
+        Jogue Aqui!
       </Link>
+      <DiscordButton />
     </div>
   );
 }
@@ -40,8 +40,8 @@ function CTAButtons() {
 function HeroSubtitle() {
   return (
     <p className='mt-4 max-w-xl text-center text-lg text-white/90 font-display'>
-      Aventure-se em Vanilla! Domine a fantasia, evolua sua jornada e torne-se uma lenda nos mundos mágicos de PW e
-      Ragnarok.
+      Milhares já garantiram seu lugar. E você? Os primeiros a entrar escrevem a história. Acesse nosso discord e não
+      perca nenhuma novidade!
     </p>
   );
 }
@@ -56,6 +56,14 @@ function HeroTitle() {
   );
 }
 
+function LaunchLabel() {
+  return (
+    <div className='relative mx-auto mb-8 flex w-fit items-center justify-center rounded bg-[var(--color-gold)] px-5 py-1.5 text-xs font-bold uppercase tracking-widest text-[var(--color-dark-blue)] shadow-md sm:text-sm'>
+      🔸Lançamento Oficial em Setembro🔸
+    </div>
+  );
+}
+
 export default function HeroSection() {
   return (
     <section
@@ -67,6 +75,7 @@ export default function HeroSection() {
     >
       {/* Conteúdo central */}
       <div className='relative z-10 text-center max-w-4xl justify-center flex flex-col items-center'>
+        <LaunchLabel />
         <HeroTitle />
         <HeroSubtitle />
         <CTAButtons />

@@ -49,7 +49,7 @@ function ServerLogo() {
 function PlayLabel() {
   return (
     <div className='relative mx-auto w-fit flex z-10 bg-[var(--color-gold)] text-[var(--color-dark-blue)] px-4 py-1 text-xs font-bold rounded uppercase tracking-wider shadow-md'>
-      Jogue Agora
+      Lançamento Oficial em Setembro
     </div>
   );
 }
@@ -58,7 +58,7 @@ function PlayLabel() {
 function SectionTitle() {
   return (
     <h2 className='relative z-10 text-4xl md:text-5xl text-white font-sans text-center mt-4 drop-shadow-md'>
-      Um Mundo de Fantasia Espera por Você
+      UMA REVOLUÇÃO, SERVIDORES ILIMITADOS
     </h2>
   );
 }
@@ -67,9 +67,10 @@ function SectionTitle() {
 function SectionDescription() {
   return (
     <p className='relative z-10 mt-4 max-w-2xl mx-auto text-center text-base md:text-lg text-white/80 font-light font-display'>
-      Vanilla Games nasceu da paixão por mundos fantásticos e do desejo de oferecer uma experiência única e acessível.
-      Aqui, você encontra servidores como Perfect World e Ragnarok com ajustes modernos, equilíbrio, fidelidade e muita
-      magia no ar.
+      Somos uma empresa criada por programadores apaixonados, unidos para revolucionar o cenário de servidores privados
+      no Brasil. Nosso primeiro grande lançamento acontecerá em breve, no Perfect World e será preparado com tecnologia
+      de ponta e experiência única para os jogadores. Em breve, iremos expandir nosso portfólio com clássicos que todo
+      mundo ama!
     </p>
   );
 }

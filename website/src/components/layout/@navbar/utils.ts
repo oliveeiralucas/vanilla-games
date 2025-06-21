@@ -20,11 +20,12 @@ export function getMenuBySubdomain(subdomain: string | null) {
   if (!subdomain) {
     return [
       { label: 'Home', href: '#home' },
-      { label: 'Streamers', href: '#streamers' },
+      { label: 'Sobre Nós', href: '#servidor' },
+      { label: 'Jogos', href: '#jogos' },
+      { label: 'Novidades', href: '#novidades' },
       { label: 'Criar Conta', href: '#criarconta' },
-      { label: 'Lista de Jogos', href: '#jogos' },
-      { label: 'Nosso Servidor', href: '#servidor' },
       { label: 'Comunidade', href: '#discord' },
+
     ];
   }
 
