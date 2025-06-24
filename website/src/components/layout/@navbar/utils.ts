@@ -25,7 +25,6 @@ export function getMenuBySubdomain(subdomain: string | null) {
       { label: 'Novidades', href: '#novidades' },
       { label: 'Criar Conta', href: '#criarconta' },
       { label: 'Comunidade', href: '#discord' },
-
     ];
   }
 
