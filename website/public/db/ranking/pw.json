@@ -1,0 +1,82 @@
+[
+  {
+    "rank": 1,
+    "nivel": 105,
+    "exp": 987654321,
+    "jogador": "ZeusPW",
+    "classe": "Espadachim",
+    "cla": "Titans"
+  },
+  {
+    "rank": 2,
+    "nivel": 104,
+    "exp": 876543210,
+    "jogador": "Athena",
+    "classe": "Maga",
+    "cla": "Olympus"
+  },
+  {
+    "rank": 3,
+    "nivel": 104,
+    "exp": 850000000,
+    "jogador": "Hades",
+    "classe": "Assassino",
+    "cla": "DarkRealm"
+  },
+  {
+    "rank": 4,
+    "nivel": 103,
+    "exp": 820000000,
+    "jogador": "Poseidon",
+    "classe": "Arqueiro",
+    "cla": "Oceanic"
+  },
+  {
+    "rank": 5,
+    "nivel": 102,
+    "exp": 800000000,
+    "jogador": "Apollo",
+    "classe": "Bardo",
+    "cla": "Sunfire"
+  },
+  {
+    "rank": 6,
+    "nivel": 101,
+    "exp": 780000000,
+    "jogador": "Ares",
+    "classe": "Barbaro",
+    "cla": "Warfury"
+  },
+  {
+    "rank": 7,
+    "nivel": 100,
+    "exp": 760000000,
+    "jogador": "Hermes",
+    "classe": "Mercador",
+    "cla": "FleetFeet"
+  },
+  {
+    "rank": 8,
+    "nivel": 100,
+    "exp": 740000000,
+    "jogador": "Hera",
+    "classe": "Sacerdotisa",
+    "cla": "DivineOrder"
+  },
+  {
+    "rank": 9,
+    "nivel": 99,
+    "exp": 720000000,
+    "jogador": "Cronos",
+    "classe": "Feiticeiro",
+    "cla": "Timeless"
+  },
+  {
+    "rank": 10,
+    "nivel": 98,
+    "exp": 700000000,
+    "jogador": "Gaia",
+    "classe": "Druida",
+    "cla": "NatureGuard"
+  }
+]

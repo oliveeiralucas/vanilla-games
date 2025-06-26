@@ -1,0 +1,70 @@
+[
+  {
+    "id": 1,
+    "type": "Notas de Atualização",
+    "date": "2025-06-25",
+    "title": "Lançamento da Nova Expansão - A Ascensão dos Guardiões",
+    "excerpt": "Explore as novas terras de Arcádia, enfrente chefes lendários e descubra habilidades inéditas que vão revolucionar o campo de batalha.",
+    "media": {
+      "type": "video",
+      "url": "https://www.youtube.com/embed/example",
+      "thumbnail": "/images/news/ascensao-thumb.jpg"
+    }
+  },
+  {
+    "id": 2,
+    "type": "Dev Blog",
+    "date": "2025-06-24",
+    "title": "Rebalanceamento de Classes – Patch 1.9.5",
+    "excerpt": "O time de desenvolvimento detalha as mudanças de balanceamento nas classes Arqueiro, Mago e Guerreiro nesta nova atualização.",
+    "media": {
+      "type": "image",
+      "url": "/images/news/balanceamento.jpg"
+    }
+  },
+  {
+    "id": 3,
+    "type": "Artigo",
+    "date": "2025-06-22",
+    "title": "Guia de Iniciação ao Cultivo Espiritual",
+    "excerpt": "Está começando agora? Entenda os tipos de cultivo, suas vantagens e como otimizar sua progressão dentro do jogo.",
+    "media": {
+      "type": "image",
+      "url": "/images/news/guia-cultivo.jpg"
+    }
+  },
+  {
+    "id": 4,
+    "type": "Notas de Atualização",
+    "date": "2025-06-25",
+    "title": "Lançamento da Nova Expansão - A Ascensão dos Guardiões",
+    "excerpt": "Explore as novas terras de Arcádia, enfrente chefes lendários e descubra habilidades inéditas que vão revolucionar o campo de batalha.",
+    "media": {
+      "type": "video",
+      "url": "https://www.youtube.com/embed/example",
+      "thumbnail": "/images/news/ascensao-thumb.jpg"
+    }
+  },
+  {
+    "id": 5,
+    "type": "Dev Blog",
+    "date": "2025-06-24",
+    "title": "Rebalanceamento de Classes – Patch 1.9.5",
+    "excerpt": "O time de desenvolvimento detalha as mudanças de balanceamento nas classes Arqueiro, Mago e Guerreiro nesta nova atualização.",
+    "media": {
+      "type": "image",
+      "url": "/images/news/balanceamento.jpg"
+    }
+  },
+  {
+    "id": 6,
+    "type": "Artigo",
+    "date": "2025-06-22",
+    "title": "Guia de Iniciação ao Cultivo Espiritual",
+    "excerpt": "Está começando agora? Entenda os tipos de cultivo, suas vantagens e como otimizar sua progressão dentro do jogo.",
+    "media": {
+      "type": "image",
+      "url": "/images/news/guia-cultivo.jpg"
+    }
+  }
+]
